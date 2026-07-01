@@ -2,6 +2,7 @@
 
 A cross-platform fitness tracking app built with Flutter, designed to log workouts, track progress over time, and visualize training data through interactive charts — all stored locally on-device with no backend required.
 
+![Build Status](https://github.com/adiKr07/NexRep/actions/workflows/build.yml/badge.svg)
 ![Platform](https://img.shields.io/badge/platform-Android-green)
 ![Flutter](https://img.shields.io/badge/flutter-3.x-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
@@ -46,7 +47,7 @@ The app follows a lightweight provider pattern rather than a heavier state manag
 
 | Home | Workout Log | Analytics | Charts |
 |---|---|---|---|
-| _add screenshot_ | _add screenshot_ | _add screenshot_ | _add screenshot_ |
+| ![Home](screenshots/home.png) | ![Workout](screenshots/workout.png) | ![Analytics](screenshots/analytics.png) | ![Charts](screenshots/charts.png) |
 
 ## Getting Started
 
@@ -58,8 +59,8 @@ The app follows a lightweight provider pattern rather than a heavier state manag
 ### Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/fitmeadi.git
-cd fitmeadi
+git clone https://github.com/adiKr07/NexRep.git
+cd NexRep
 flutter pub get
 flutter run
 ```
