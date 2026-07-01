@@ -2,7 +2,6 @@
 
 A cross-platform fitness tracking app built with Flutter, designed to log workouts, track progress over time, and visualize training data through interactive charts — all stored locally on-device with no backend required.
 
-![Build Status](https://github.com/adiKr07/NexRep/actions/workflows/build.yml/badge.svg)
 ![Platform](https://img.shields.io/badge/platform-Android-green)
 ![Flutter](https://img.shields.io/badge/flutter-3.x-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
@@ -87,4 +86,4 @@ This repo includes a GitHub Actions workflow (`.github/workflows/build.yml`) tha
 
 ## License
 
-This project is for personal/portfolio use. Feel free to fork and adapt.
+This project is licensed under the [MIT License](LICENSE).
