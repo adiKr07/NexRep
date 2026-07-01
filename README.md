@@ -33,13 +33,14 @@ NexRep lets users log workouts by muscle group, track sets/reps/weight per exerc
 
 ## Architecture
 
-lib/
-├── models/          # Data models (Workout, ExerciseEntry, WorkoutSet)
-├── providers/        # State management (WorkoutManager singleton)
-├── screens/          # UI screens (Home, Workout, Analytics, Charts, Exercise Log, etc.)
-├── theme/             # Centralized color palette and ThemeData
-├── exerciselist.dart # Static exercise database grouped by muscle group
-└── main.dart
+    lib/
+      models/          Data models — Workout, ExerciseEntry, WorkoutSet
+      providers/       State management — WorkoutManager singleton
+      screens/         UI screens — Home, Workout, Analytics, Charts, Exercise Log, etc.
+      theme/           Centralized color palette and ThemeData
+      exerciselist.dart  Static exercise database grouped by muscle group
+      main.dart
+
 
 The app follows a lightweight provider pattern rather than a heavier state management library (Bloc/Riverpod) — `WorkoutManager` is a singleton `ChangeNotifier`-style class that owns all workout data, persists to `SharedPreferences` as JSON, and exposes aggregation methods (`totalVolume`, `getVolumeTrend()`, `getSetsByMuscleGroup()`, etc.) consumed directly by the analytics screens.
 
