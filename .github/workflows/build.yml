@@ -17,5 +17,5 @@ jobs:
       - run: flutter build apk --release
       - uses: actions/upload-artifact@v4
         with:
-          name: fitmeadi-apk
+          name: NexRep-apk
           path: build/app/outputs/flutter-apk/app-release.apk
