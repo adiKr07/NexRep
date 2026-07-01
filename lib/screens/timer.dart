@@ -2,9 +2,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'timer_session.dart';
 
-// No longer owns any state itself — purely displays and controls the
-// global `timerSession`, so it keeps working correctly no matter how many
-// times this widget gets created/destroyed by navigation.
+
 class CircularTimerWidget extends StatelessWidget {
   const CircularTimerWidget({super.key});
 

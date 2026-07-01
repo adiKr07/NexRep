@@ -45,8 +45,7 @@ class _ExerciseLogScreenState extends State<ExerciseLogScreen> {
     }
   }
   
-  // Shared dialog for both adding a new set and editing an existing one.
-  // Returns true if the user confirmed, false/null if cancelled.
+  
   Future<bool> _showSetDialog(WorkoutSet set) async {
     int reps = set.reps;
     double weight = set.weight;

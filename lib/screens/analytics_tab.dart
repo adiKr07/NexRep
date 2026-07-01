@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fitmeadi/providers/workout_provider.dart';
 import '../exerciselist.dart';
-import 'exercise_library_analytics_Screen.dart'; // adjust to your actual route
+import 'exercise_library_analytics_screen.dart';
 import 'charts_screen.dart';
 import '../theme/app_colors.dart';
 
@@ -27,7 +27,7 @@ class AnalyticsScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // ---- Overview stat tiles ----
+          
           GridView.count(
             crossAxisCount: 2,
             shrinkWrap: true,

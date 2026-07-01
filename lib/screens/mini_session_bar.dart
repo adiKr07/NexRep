@@ -5,10 +5,7 @@ import 'timer_screen.dart';
 import 'stopwatch_screen.dart';
 import '../theme/app_colors.dart';
 
-// Listens to BOTH global sessions at once, shows whichever is active.
-// If you ever want both visible simultaneously, this would need to become
-// a list/stack of bars instead of a single one — not done here since only
-// one tool is likely to be in use at a time in practice.
+
 class MiniSessionBar extends StatelessWidget {
   const MiniSessionBar({super.key});
 
@@ -69,8 +66,7 @@ class MiniSessionBar extends StatelessWidget {
           );
         }
 
-        // AnimatedSwitcher gives a smooth fade in/out as the bar
-        // appears/disappears, instead of an abrupt pop.
+        
         return AnimatedSwitcher(
           duration: const Duration(milliseconds: 200),
           child: content == null

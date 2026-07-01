@@ -34,8 +34,7 @@ class _MainNavScreenState extends State<MainNavScreen> {
               AnalyticsScreen(),
             ],
           ),
-          // Floats above whichever tab is showing, on top of its own AppBar,
-          // since it's a later child in the Stack than IndexedStack.
+          
           const SafeArea(
             child: Align(
               alignment: Alignment.topCenter,

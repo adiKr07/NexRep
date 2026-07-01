@@ -1,4 +1,4 @@
-// lib/theme/app_theme.dart
+
 import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
@@ -7,7 +7,7 @@ class AppTheme {
     return ThemeData(
       brightness: Brightness.dark,
       scaffoldBackgroundColor: AppColors.background,
-      fontFamily: 'Inter', // or whatever font you're using, else omit
+      fontFamily: 'Inter', 
 
       colorScheme: const ColorScheme.dark(
         primary: AppColors.neonGreen,

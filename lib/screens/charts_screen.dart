@@ -101,7 +101,7 @@ class _ChartsScreenState extends State<ChartsScreen> with SingleTickerProviderSt
   }
 }
 
-// ---------------- Volume Trend tab ----------------
+
 
 class _VolumeTrendTab extends StatelessWidget {
   final _Period selectedPeriod;
@@ -249,7 +249,7 @@ class _VolumeTrendTab extends StatelessWidget {
   }
 }
 
-// ---------------- Breakdown tab ----------------
+
 
 class _BreakdownTab extends StatelessWidget {
   final MuscleGrps? highlightedGroup;

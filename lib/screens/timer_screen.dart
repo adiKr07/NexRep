@@ -17,15 +17,12 @@ class _TimerScreenState extends State<TimerScreen> {
   void initState() {
     super.initState();
     _loadLastDuration();
-    // Whenever the session's duration changes (via drag-to-set), persist it
-    // as the new "last used" value — works regardless of which screen
-    // triggered the change, since the session is global.
+    
     timerSession.addListener(_onSessionChanged);
   }
 
   Future<void> _loadLastDuration() async {
-    // Only seed from saved prefs if nothing's already in progress —
-    // otherwise reopening this screen mid-countdown would reset it.
+    
     if (!timerSession.isActive) {
       final seconds = await TimerPrefs.getLastDurationSeconds();
       timerSession.setDuration(Duration(seconds: seconds));

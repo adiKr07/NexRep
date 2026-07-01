@@ -76,7 +76,7 @@ class HomeTab extends StatelessWidget {
 
           const SizedBox(height: 24),
 
-          // ---- Primary action ----
+          
           SizedBox(
             width: double.infinity,
             child: ElevatedButton.icon(
@@ -96,7 +96,7 @@ class HomeTab extends StatelessWidget {
 
           const SizedBox(height: 24),
 
-          // ---- Today's exercises preview ----
+          
           if (todaysExercises.isNotEmpty) ...[
             const Text(
               "Today's Workout",

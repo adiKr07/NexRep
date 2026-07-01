@@ -8,17 +8,13 @@ class TimerSession extends ChangeNotifier {
   bool isRunning = false;
 
   Timer? _ticker;
-  DateTime? _endTime; // wall-clock target, not just a counted-down number —
-  // this keeps the countdown accurate even if individual ticks get delayed.
-
-  // True any time there's a countdown in progress or paused mid-way —
-  // used to decide whether the floating mini-bar should show at all.
+  DateTime? _endTime; 
   bool get isActive => remaining < totalDuration && remaining > Duration.zero || isRunning;
 
   bool get isFinished => remaining == Duration.zero && totalDuration > Duration.zero;
 
   void setDuration(Duration newDuration) {
-    if (isRunning) return; // can't edit while actively counting down
+    if (isRunning) return; 
     totalDuration = newDuration;
     remaining = newDuration;
     notifyListeners();

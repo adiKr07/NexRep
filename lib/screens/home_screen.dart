@@ -28,8 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
     weekStart = _mondayOf(selectedDate);
   }
 
-  // Finds the Monday of whatever week `date` falls in.
-  // DateTime.weekday is 1 (Monday) through 7 (Sunday).
+  
   DateTime _mondayOf(DateTime date) {
     final cleanDate = DateTime(date.year, date.month, date.day);
     return cleanDate.subtract(Duration(days: cleanDate.weekday - 1));
@@ -67,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         children: [
-          // Month label + week navigation arrows
+          
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Row(
@@ -139,7 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
           const SizedBox(height: 16),
 
-          // Exercises logged on whichever day is currently selected
+          
           Expanded(
             child: entriesForSelectedDate.isEmpty
                 ? Center(
